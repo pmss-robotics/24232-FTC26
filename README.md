@@ -1615,7 +1615,7 @@ Changes include:
  * made ReadWriteRunnableStanard interface public.
  * fixed off-by-one errors in Command constructor
  * moved specific hardware implmentations into their own package.
- * moved specific gamepad implemnatations to the hardware library.
+ * moved specific gamepad implemenatations to the hardware library.
  * changed LICENSE file to new BSD version.
  * fixed race condition when shutting down Modern Robotics USB devices.
  * methods in the ColorSensor classes have been synchronized.
@@ -1635,9 +1635,9 @@ Changes include:
  * Updated DcMotor API
  * Enable read mode on new address in setI2cAddress
  * Fix so that driver station app resets the gamepads when switching OpModes.
- * USB-related code changes to make USB comm more responsive and to display more explicit error messages.
+ * USB-related code changes to make USB comm more responsive and to display more explicit error drive.messages.
   - Fix so that USB will recover properly if the USB bus returns garbage data.
-  - Fix USB initializtion race condition.
+  - Fix USB initialization race condition.
   - Better error reporting during FTDI open.
   - More explicit messages during USB failures.
   - Fixed bug so that USB device is closed if event loop teardown method was not called.

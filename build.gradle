@@ -9,9 +9,13 @@ buildscript {
         mavenCentral()
         google()
     }
+
     dependencies {
         // Note for FTC Teams: Do not modify this yourself.
+        //noinspection AndroidGradlePluginVersion
         classpath 'com.android.tools.build:gradle:8.7.0'
+        // the following is optional if you want vision
+
     }
 }
 
@@ -22,8 +26,13 @@ allprojects {
         mavenCentral()
         google()
     }
-}
-
-repositories {
-    mavenCentral()
+    repositories {
+        maven {
+            url = 'https://maven.brott.dev/'
+        }
+        maven {
+            url = 'https://jitpack.io'
+        }
+        mavenCentral()
+    }
 }
